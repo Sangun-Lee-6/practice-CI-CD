@@ -30,7 +30,7 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ secrets.DOCKER_IMAGE_NAME }}:latest
-          push-args: --disable-content-trust
+          # push-args: --disable-content-trust
 
   deploy:
     needs: build
