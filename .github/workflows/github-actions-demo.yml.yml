@@ -19,6 +19,6 @@ jobs:
       - name: Build the Docker image
         run: docker build -t nest-cloud-run .
       - name: taging
-        run: docker tag nest-cloud-run:latest sangunlee6/nest-cloud-run:latest
+        run: docker tag nest-cloud-run:latest sangunlee/nest-cloud-run:latest
       - name: Push to Dockerhub
-        run: docker push sangunlee6/nest-cloud-run:latest
+        run: docker push sangunlee/nest-cloud-run:latest
